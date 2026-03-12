@@ -1,3 +1,5 @@
+import ScrollCharacter from "@/components/ScrollCharacter";
+
 export default function Hero() {
   return (
     <section
@@ -10,6 +12,9 @@ export default function Hero() {
     >
       {/* Subtle overlay */}
       <div className="absolute inset-0 bg-black/15" />
+
+      {/* Disney character columns — scroll-driven */}
+      <ScrollCharacter />
 
       {/* Mountain silhouette at bottom */}
       <div className="absolute bottom-0 left-0 right-0 opacity-25 pointer-events-none">
@@ -24,7 +29,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-lg mx-auto">
         <p
           className="text-[#E8B96A] text-[11px] tracking-[0.45em] uppercase mb-8"
           style={{ fontFamily: "var(--font-inter)" }}
@@ -32,7 +37,7 @@ export default function Hero() {
           Psicología Clínica
         </p>
         <h1
-          className="text-[#FAF7F2] text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.15] mb-10"
+          className="text-[#FAF7F2] text-5xl md:text-6xl font-medium leading-[1.15] mb-10"
           style={{ fontFamily: "var(--font-playfair)" }}
         >
           Aquí empieza tu viaje
