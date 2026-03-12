@@ -33,8 +33,8 @@ export default function Hero() {
     >
       <div className="sticky top-0 h-screen overflow-hidden">
 
-        {/* Video — right side */}
-        <div className="absolute right-0 top-0 w-[58%] h-full">
+        {/* Video — right 20% */}
+        <div className="absolute right-0 top-0 w-[20%] h-full">
           <video
             ref={videoRef}
             src="/nina_video.mp4"
@@ -45,12 +45,12 @@ export default function Hero() {
           />
         </div>
 
-        {/* Gradient overlay — blends left text area into the video */}
+        {/* Gradient overlay — 10% blend zone between text and video */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "linear-gradient(to right, #1A1008 0%, #2C1A0A 25%, #6B3E18 52%, #9B6830 62%, transparent 75%)",
+              "linear-gradient(to right, #1A1008 0%, #1A1008 70%, #6B3E18 78%, transparent 80%)",
           }}
         />
 
